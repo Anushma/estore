@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/Anushma/estore.git'
+             {
+                git branch: 'main', url: 'https://github.com/Anushma/estore.git'
 
                 // Run Maven Wrapper Commands
                 echo 'Building the Project with maven compile'
